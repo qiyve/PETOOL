@@ -1,0 +1,302 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_Main DIALOGEX 0, 0, 444, 255
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PETool"
+FONT 11, "黑体", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "",IDC_STATIC,345,14,85,225,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "PE查看器",IDC_BUTTON_PE,362,26,50,14
+    PUSHBUTTON      "傀儡进程",IDC_BUTTON_Project,362,50,50,14
+    PUSHBUTTON      "刷新",IDC_BUTTON_Updata,362,162,50,14
+    PUSHBUTTON      "关于",IDC_BUTTON_About,362,186,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON_Exit,362,210,50,14
+    GROUPBOX        "",IDC_STATIC,17,14,322,225,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST_Process,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,20,22,313,103
+    CONTROL         "",IDC_LIST_Moudle,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,20,130,313,103
+END
+
+IDD_DIALOG_Pe DIALOGEX 0, 0, 321, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[PE信息查看]"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "PE头信息",IDC_STATIC,14,15,241,158,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "关闭",IDC_BUTTON_Pe_Close,259,15,50,14
+    PUSHBUTTON      "区段",IDC_BUTTON_Pe_Section,259,35,50,14
+    PUSHBUTTON      "目录",IDC_BUTTON_PE_Directory,259,55,50,14
+    LTEXT           "入口点：",IDC_STATIC,28,32,30,8
+    LTEXT           "镜像基质:",IDC_STATIC,28,49,30,8
+    LTEXT           "标志字:",IDC_STATIC,28,151,33,8
+    LTEXT           "镜像大小:",IDC_STATIC,28,66,29,8
+    LTEXT           "代码基质:",IDC_STATIC,28,83,33,8
+    LTEXT           "数据基质:",IDC_STATIC,28,100,29,8
+    LTEXT           "内存对齐：",IDC_STATIC,28,117,38,8
+    LTEXT           "文件对齐:",IDC_STATIC,28,134,32,8
+    LTEXT           "子系统:",IDC_STATIC,137,32,27,8
+    LTEXT           "区段数目:",IDC_STATIC,137,49,34,8
+    LTEXT           "时间戳:",IDC_STATIC,137,66,27,8
+    LTEXT           "部首大小:",IDC_STATIC,137,83,36,8
+    LTEXT           "特征值:",IDC_STATIC,137,100,27,8
+    LTEXT           "可选PE头大小:",IDC_STATIC,137,134,48,8
+    LTEXT           "校验和:",IDC_STATIC,137,117,27,8
+    LTEXT           "RVA数和大小:",IDC_STATIC,137,151,46,8
+    EDITTEXT        IDC_EDIT_OEP,63,30,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BaseofCode,63,81,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3_ImageBase,63,47,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BaseOfData,63,98,48,12,ES_AUTOHSCROLL
+    EDITTEXT        DC_EDIT_SectionAligment,63,115,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FILEAligent,63,132,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Magic,63,149,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SizeofImage,63,64,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Subsystem,182,29,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SizeofHeader,182,80,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NumberofSection,182,46,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Characteristics,182,97,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CheckSum,182,114,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SizeofOptionalHeadel,182,131,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NumberofRvaAndSize,182,148,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TimeDataStap,182,63,48,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_Section DIALOGEX 0, 0, 316, 111
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[节表]"
+FONT 9, "微软雅黑", 400, 0, 0x86
+BEGIN
+    CONTROL         "",IDC_LIST_Section,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,302,97
+END
+
+IDD_DIALOG_Directory DIALOGEX 0, 0, 306, 273
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "目录表"
+FONT 8, "微软雅黑", 400, 0, 0x86
+BEGIN
+    GROUPBOX        "目录信息",IDC_STATIC,7,7,227,259,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "关闭",IDC_BUTTON_Directory_Close,241,17,50,14
+    EDITTEXT        IDC_EDIT_Rva_Export,67,33,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva_Import,67,47,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3_RvaRESOURCE,67,61,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__EXCEPTION,67,75,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva_lparsent,67,243,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva_SECURITY,67,89,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__BASERELOC,67,103,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__COPYRIGHT,67,131,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva_TLS,67,159,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__BOUND_IMPORT,67,187,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__IAT,67,201,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva_GLOBALPTR,67,145,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__LOAD_CONFIG,67,173,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__DEBUG,67,117,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PE_COM_DESCRIPTOR,67,229,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Rva__DELAY_IMPORT,67,215,40,12,ES_AUTOHSCROLL
+    LTEXT           "Rva",IDC_STATIC,81,21,12,8
+    LTEXT           "Size",IDC_STATIC,146,21,12,8
+    EDITTEXT        IDC_EDIT_Size_Export,135,33,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size_Import,135,47,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Siez_RESOURCE,135,61,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size__EXCEPTION,135,75,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size_lparent,135,243,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Siez_SECURITY,135,89,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size__BASERELOC,135,103,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size__COPYRIGHT,135,131,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size__TLS,135,159,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size__BOUND_IMPORT,135,187,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size_IAT,135,201,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT__Size__GLOBALPTR,135,145,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size_LOAD_CONFIG,135,173,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Siez__DEBUG,135,117,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size_COM_DESCRIPTOR,135,229,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Size_DELAY_IMPORT,135,215,40,12,ES_AUTOHSCROLL
+    LTEXT           "输出表：",IDC_STATIC,22,33,27,8
+    LTEXT           "输入表：",IDC_STATIC,22,47,27,8
+    LTEXT           "资源表：",IDC_STATIC,22,61,27,8
+    LTEXT           "异常表：",IDC_STATIC,22,75,27,8
+    LTEXT           "安全：",IDC_STATIC,22,89,21,8
+    LTEXT           "重定位表：",IDC_STATIC,22,103,34,8
+    LTEXT           "调试：",IDC_STATIC,22,117,21,8
+    LTEXT           "版权：",IDC_STATIC,22,131,21,8
+    LTEXT           "全局指针：",IDC_STATIC,22,145,34,8
+    LTEXT           "Tls：",IDC_STATIC,22,159,16,8
+    LTEXT           "导入配置",IDC_STATIC,22,173,27,8
+    LTEXT           "绑定导入",IDC_STATIC,22,187,27,8
+    LTEXT           "IAT:",IDC_STATIC,22,201,13,8
+    LTEXT           "延迟导入：",IDC_STATIC,22,215,34,8
+    LTEXT           "COM:",IDC_STATIC,22,229,19,8
+    LTEXT           "保留：",IDC_STATIC,22,243,21,8
+    PUSHBUTTON      ". . .",IDC_BUTTON1,185,33,21,10
+    PUSHBUTTON      ". . .",IDC_BUTTON2,185,103,21,10
+    PUSHBUTTON      ". . .",IDC_BUTTON3,185,47,21,10
+    PUSHBUTTON      ". . .",IDC_BUTTON4,185,201,21,10
+    PUSHBUTTON      ". . .",IDC_BUTTON5,185,187,21,10
+    PUSHBUTTON      ". . .",IDC_BUTTON6,185,62,21,10
+END
+
+IDD_DIALOG_SHELL DIALOGEX 0, 0, 311, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "加壳"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "...",IDC_BUTTON_FILE_PATH,228,18,37,15
+    PUSHBUTTON      "...",IDC_BUTTON_SHELL_PATH,228,43,37,15
+    EDITTEXT        IDC_EDIT_FILE_NAME,86,15,137,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SHELL_NAME,86,39,137,20,ES_AUTOHSCROLL
+    LTEXT           "容器文件",IDC_STATIC,40,18,45,12
+    LTEXT           "内容文件",IDC_STATIC,40,42,42,12
+    PUSHBUTTON      "开始",IDC_BUTTON_Start,114,66,69,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_Main, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 437
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 248
+    END
+
+    IDD_DIALOG_Pe, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_DIALOG_Section, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_DIALOG_Directory, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+
+    IDD_DIALOG_SHELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 87
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_Main AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Pe AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Section AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Directory AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SHELL AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 100, 100,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0,
+    0, 0, 0, 0
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
